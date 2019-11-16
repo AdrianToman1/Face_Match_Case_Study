@@ -1,0 +1,35 @@
+<h1>Azure Face Service Detect - Match</h1>
+
+<p>This demonstrates how to use perform a face match from the Azure Face Service API.</p>
+
+<h2>Neutral Face</h2>
+
+<azure-detect [(faceId)]="neutralFaceId" [src]="neutralFaceImage"></azure-detect>
+
+<hr />
+
+<h2>AEV</h2>
+
+<azure-verify [faceId1]="neutralFaceId" [faceId2]="asicFaceId"></azure-verify>
+
+<azure-detect [(faceId)]="asicFaceId" [src]="asicImage"></azure-detect>
+
+<hr />
+
+<h2>Resistant To Cosmetic Changes</h2>
+
+<azure-verify [faceId1]="neutralFaceId" [faceId2]="unshavenFaceId"></azure-verify>
+
+<azure-detect [(faceId)]="unshavenFaceId" [src]="unshavenFaceImage"></azure-detect>
+
+<azure-verify [faceId1]="neutralFaceId" [faceId2]="glassesFaceId"></azure-verify>
+
+<azure-detect [(faceId)]="glassesFaceId" [src]="glassesFaceImage"></azure-detect>
+
+<azure-verify [faceId1]="neutralFaceId" [faceId2]="hatFaceId"></azure-verify>
+
+<azure-detect [(faceId)]="hatFaceId" [src]="hatFaceImage"></azure-detect>
+
+<azure-verify [faceId1]="neutralFaceId" [faceId2]="hatAndGlassesFaceId"></azure-verify>
+
+<azure-detect [(faceId)]="hatAndGlassesFaceId" [src]="hatAndGlassesFaceImage"></azure-detect>

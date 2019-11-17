@@ -1,11 +1,11 @@
 {
-  "name": "FaceServiceWorkshop",
+  "name": "FaceMatchCaseStudy",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run FaceServiceWorkshop:server:dev",
+    "build:ssr": "ng run FaceMatchCaseStudy:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
